@@ -1,308 +1,312 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tulsi Plant Profile</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
       font-family:'Poppins',sans-serif;
-    }body{
-  background:linear-gradient(135deg,#dfffe2,#b7f5c2,#e9fff0);
-  min-height:100vh;
-  padding:30px 15px;
-  color:#134b1f;
-}
+    }
 
-.container{
-  max-width:900px;
-  margin:auto;
-  background:white;
-  border-radius:30px;
-  overflow:hidden;
-  box-shadow:0 10px 40px rgba(0,0,0,0.12);
-}
+    body{
+      background:linear-gradient(135deg,#dfffe2,#b7f5c2,#eaffef);
+      min-height:100vh;
+      padding:20px;
+      color:#184224;
+    }
 
-.hero{
-  background:linear-gradient(135deg,#0f8b3d,#35b558);
-  padding:40px 20px;
-  text-align:center;
-  color:white;
-  position:relative;
-}
+    .container{
+      max-width:1000px;
+      margin:auto;
+      background:white;
+      border-radius:30px;
+      overflow:hidden;
+      box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    }
 
-.hero img{
-  width:180px;
-  height:180px;
-  object-fit:cover;
-  border-radius:20px;
-  border:5px solid rgba(255,255,255,0.7);
-  margin-bottom:20px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.2);
-}
+    .hero{
+      background:linear-gradient(135deg,#0f8b3d,#34b857);
+      padding:40px 20px;
+      text-align:center;
+      color:white;
+    }
 
-.hero h1{
-  font-size:40px;
-  margin-bottom:8px;
-}
+    .hero img{
+      width:180px;
+      height:180px;
+      object-fit:cover;
+      border-radius:24px;
+      border:5px solid rgba(255,255,255,0.7);
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+      margin-bottom:20px;
+    }
 
-.hero p{
-  font-size:18px;
-  opacity:0.95;
-}
+    .hero h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
 
-.content{
-  padding:35px 25px;
-  display:grid;
-  gap:25px;
-}
+    .hero p{
+      font-size:18px;
+      opacity:0.95;
+    }
 
-.card{
-  background:#f5fff7;
-  border-radius:22px;
-  padding:25px;
-  border:2px solid #d6f5dd;
-}
+    .content{
+      padding:30px 20px;
+      display:grid;
+      gap:25px;
+    }
 
-.card h2{
-  color:#0f8b3d;
-  margin-bottom:18px;
-  font-size:26px;
-}
+    .card{
+      background:#f5fff7;
+      border-radius:24px;
+      padding:25px;
+      border:2px solid #d8f6de;
+    }
 
-.info-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:14px;
-}
+    .card h2{
+      color:#11873c;
+      margin-bottom:20px;
+      font-size:30px;
+    }
 
-.info-item{
-  background:white;
-  padding:14px 16px;
-  border-radius:16px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.05);
-}
+    .info-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:18px;
+    }
 
-.label{
-  font-size:13px;
-  color:#5b7c64;
-  margin-bottom:5px;
-}
+    .info-item{
+      background:white;
+      border-radius:20px;
+      padding:18px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.06);
+    }
 
-.value{
-  font-size:16px;
-  font-weight:600;
-  color:#163d22;
-}
+    .label{
+      font-size:14px;
+      color:#6d8b74;
+      margin-bottom:8px;
+    }
 
-.uses{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:10px;
-}
+    .value{
+      font-size:20px;
+      font-weight:600;
+      color:#1b4025;
+      line-height:1.5;
+    }
 
-.tag{
-  background:#0f8b3d;
-  color:white;
-  padding:10px 16px;
-  border-radius:999px;
-  font-size:14px;
-  font-weight:500;
-}
+    .tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
 
-footer{
-  text-align:center;
-  padding:20px;
-  color:#3b5c45;
-  font-size:14px;
-}
+    .tag{
+      background:#11873c;
+      color:white;
+      padding:10px 18px;
+      border-radius:999px;
+      font-size:15px;
+      font-weight:500;
+    }
 
-@media(max-width:600px){
-  .hero h1{
-    font-size:30px;
-  }
+    footer{
+      text-align:center;
+      padding:22px;
+      font-size:14px;
+      color:#4c6d55;
+    }
 
-  .hero img{
-    width:140px;
-    height:140px;
-  }
-}
+    @media(max-width:700px){
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .hero img{
+        width:140px;
+        height:140px;
+      }
+
+      .value{
+        font-size:18px;
+      }
+
+    }
 
   </style>
 </head>
-<body><div class="container">  <div class="hero">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tulsi_or_Holy_Basil.jpg" alt="Tulsi Plant">
+
+<body>
+
+<div class="container">
+
+  <div class="hero">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tulsi_or_Holy_Basil.jpg">
+
     <h1>Tulsi / Holy Basil</h1>
+
     <p>Medicinal Plant Profile</p>
-  </div>  <div class="content"><div class="card">
-  <h2>🎓 Student Details</h2>
-  <div class="info-grid">
 
-    <div class="info-item">
-      <div class="label">Student 1</div>
-      <div class="value">Sohan Rawat</div>
+  </div>
+
+  <div class="content">
+
+    <div class="card">
+
+      <h2> Student Details</h2>
+
+      <div class="info-grid">
+
+        <div class="info-item">
+          <div class="label">Student 1</div>
+          <div class="value">Sohan Rawat</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Student 2</div>
+          <div class="value">Sonali Rajawat</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Roll Number</div>
+          <div class="value">0922PY221052</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Roll Number</div>
+          <div class="value">0921PY221073</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">College</div>
+          <div class="value">
+            Pranav Institute of Pharmaceutical Science & Research, Gwalior
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">College</div>
+          <div class="value">RNS Gwalior</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Course</div>
+          <div class="value">Bachelor of Pharmacy (B.Pharm)</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Batch</div>
+          <div class="value">2022�2026 | Final Year</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">University</div>
+          <div class="value">RGPV, Bhopal</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Phone</div>
+          <div class="value">6263380274</div>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="info-item">
-      <div class="label">Roll Number</div>
-      <div class="value">0922PY221052</div>
+    <div class="card">
+
+      <h2> Plant Details</h2>
+
+      <div class="info-grid">
+
+        <div class="info-item">
+          <div class="label">Scientific Name</div>
+          <div class="value">Ocimum tenuiflorum</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Synonym</div>
+          <div class="value">Ocimum sanctum</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Family</div>
+          <div class="value">Lamiaceae</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Kingdom</div>
+          <div class="value">Plantae</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Order</div>
+          <div class="value">Lamiales</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Genus</div>
+          <div class="value">Ocimum</div>
+        </div>
+
+        <div class="info-item">
+          <div class="label">Parts Used</div>
+          <div class="value">Leaves, Seeds, Roots, Stem</div>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="info-item">
-      <div class="label">College</div>
-      <div class="value">Pranav Institute of Pharmaceutical Science & Research, Gwalior</div>
+    <div class="card">
+
+      <h2> Medicinal Uses</h2>
+
+      <div class="tags">
+
+        <div class="tag">Adaptogen</div>
+        <div class="tag">Antimicrobial</div>
+        <div class="tag">Anti-inflammatory</div>
+        <div class="tag">Immunomodulator</div>
+        <div class="tag">Expectorant</div>
+
+      </div>
+
     </div>
 
-    <div class="info-item">
-      <div class="label">Student 2</div>
-      <div class="value">Sonali Rajawat</div>
-    </div>
+    <div class="card">
 
-    <div class="info-item">
-      <div class="label">Roll Number</div>
-      <div class="value">0921PY221073</div>
-    </div>
+      <h2> Active Constituents</h2>
 
-    <div class="info-item">
-      <div class="label">College</div>
-      <div class="value">RNS Gwalior</div>
-    </div>
+      <div class="tags">
 
-    <div class="info-item">
-      <div class="label">Course</div>
-      <div class="value">Bachelor of Pharmacy (B.Pharm)</div>
-    </div>
+        <div class="tag">Eugenol</div>
+        <div class="tag">Ursolic Acid</div>
+        <div class="tag">Rosmarinic Acid</div>
+        <div class="tag">Linalool</div>
 
-    <div class="info-item">
-      <div class="label">Batch</div>
-      <div class="value">2022–2026 | Final Year</div>
-    </div>
+      </div>
 
-    <div class="info-item">
-      <div class="label">University</div>
-      <div class="value">RGPV, Bhopal</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Email</div>
-      <div class="value">rawatsohan805@gmail.com</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Phone</div>
-      <div class="value">6263380274</div>
     </div>
 
   </div>
+
+  <footer>
+    Herbal Plant Documentation � B.Pharm Project
+  </footer>
+
 </div>
 
-    <div class="info-item">
-      <div class="label">Course</div>
-      <div class="value">Bachelor of Pharmacy (B.Pharm)</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Batch</div>
-      <div class="value">2022–2026 | Final Year</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Roll Number</div>
-      <div class="value">0922PY221052</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">College</div>
-      <div class="value">Pranav Institute of Pharmaceutical Science & Research, Gwalior</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">University</div>
-      <div class="value">RGPV, Bhopal</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Email</div>
-      <div class="value">rawatsohan805@gmail.com</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Phone</div>
-      <div class="value">6263380274</div>
-    </div>
-
-  </div>
-</div>
-
-<div class="card">
-  <h2>🌿 Plant Details</h2>
-
-  <div class="info-grid">
-
-    <div class="info-item">
-      <div class="label">Scientific Name</div>
-      <div class="value">Ocimum tenuiflorum</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Synonym</div>
-      <div class="value">Ocimum sanctum</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Family</div>
-      <div class="value">Lamiaceae</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Kingdom</div>
-      <div class="value">Plantae</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Order</div>
-      <div class="value">Lamiales</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Genus</div>
-      <div class="value">Ocimum</div>
-    </div>
-
-    <div class="info-item">
-      <div class="label">Parts Used</div>
-      <div class="value">Leaves, Seeds, Roots, Stem</div>
-    </div>
-
-  </div>
-</div>
-
-<div class="card">
-  <h2>💊 Medicinal Uses</h2>
-  <div class="uses">
-    <div class="tag">Adaptogen</div>
-    <div class="tag">Antimicrobial</div>
-    <div class="tag">Anti-inflammatory</div>
-    <div class="tag">Immunomodulator</div>
-    <div class="tag">Expectorant</div>
-  </div>
-</div>
-
-<div class="card">
-  <h2>🧪 Active Constituents</h2>
-  <div class="uses">
-    <div class="tag">Eugenol</div>
-    <div class="tag">Ursolic Acid</div>
-    <div class="tag">Rosmarinic Acid</div>
-    <div class="tag">Linalool</div>
-  </div>
-</div>
-
-  </div>  <footer>
-    Herbal Plant Documentation • B.Pharm Project Theme
-  </footer></div></body>
+</body>
 </html>
